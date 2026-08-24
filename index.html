@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="La carrera de Scarlett Johansson: cine, personajes, trayectoria y legado de una actriz versátil.">
+  <title>Scarlett Johansson · Cine, personajes y trayectoria</title>
+
+  <!-- Tipografías -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Archivo:wght@500;700&display=swap" rel="stylesheet">
+
+  <link href="css/responsive.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- ============ NAVEGACIÓN ============ -->
+<header class="site-header" id="inicio">
+  <nav class="nav container" aria-label="Navegación principal">
+    <a class="nav-brand" href="#inicio">Scarlett<span class="nav-dot">.</span></a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#biografia">Perfil</a></li>
+      <li><a href="#linea-tiempo">Trayectoria</a></li>
+      <li><a href="#obras">Películas</a></li>
+      <li><a href="#video">Entrevista</a></li>
+      <li><a href="#juego">Juego</a></li>
+      <li><a href="#centro-gabo">Legado</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ============ HERO con destellos cinematográficos ============ -->
+<section class="hero">
+  <canvas id="butterflies" aria-hidden="true"></canvas>
+
+  <div class="hero-content container">
+    <p class="eyebrow reveal">Nueva York, 1984 · Actriz · Productora · Voz creativa</p>
+    <h1 class="hero-title reveal">Scarlett <em>Johansson</em></h1>
+    <p class="hero-sub reveal">
+      Una carrera construida entre el cine independiente, los grandes universos de acción
+      y personajes que dejaron una huella propia en la cultura popular.
+    </p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-primary" href="#biografia">Conocer su historia</a>
+      <a class="btn btn-ghost" href="#obras">Ver sus películas</a>
+    </div>
+  </div>
+
+  <figure class="hero-portrait" aria-label="Retrato de Scarlett Johansson">
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Scarlett%20Johansson%20by%20Gage%20Skidmore.jpg" alt="Scarlett Johansson en una alfombra roja"
+         onerror="this.closest('.hero-portrait').classList.add('no-photo'); this.remove();">
+    <figcaption>Scarlett Johansson</figcaption>
+  </figure>
+
+  <div class="hero-stats container">
+    <div class="stat reveal"><span class="stat-num" data-count="2">0</span><span class="stat-label">nominaciones al Óscar</span></div>
+    <div class="stat reveal"><span class="stat-num" data-count="1994">0</span><span class="stat-label">debut cinematográfico</span></div>
+    <div class="stat reveal"><span class="stat-num" data-count="40">0</span><span class="stat-label">años de una carrera en expansión</span></div>
+  </div>
+</section>
+
+<main>
+
+  <!-- ============ BIOGRAFÍA ============ -->
+  <section class="section" id="biografia">
+    <div class="container grid grid-2">
+
+      <article class="bio-text reveal">
+        <p class="eyebrow">Perfil</p>
+        <h2>Una actriz de muchas capas</h2>
+        <p>
+          Scarlett Ingrid Johansson nació el 22 de noviembre de 1984 en Nueva York. Comenzó a
+          actuar desde niña y pronto demostró una presencia capaz de moverse entre el drama íntimo,
+          la comedia y el espectáculo de gran escala.
+        </p>
+        <p>
+          Su salto internacional llegó con películas como <em>Lost in Translation</em> y
+          <em>La joven de la perla</em>, donde convirtió la sutileza y la mirada en herramientas
+          dramáticas tan poderosas como el diálogo.
+        </p>
+        <p>
+          Como Natasha Romanoff / Black Widow, llevó a un personaje de cómic desde el reparto
+          coral hasta una historia propia. También ha trabajado como productora, ampliando su
+          participación detrás de cámara y eligiendo proyectos con una voz más personal.
+        </p>
+        <p>
+          Sus dos nominaciones al Óscar por <em>Marriage Story</em> y <em>Jojo Rabbit</em> confirmaron
+          una trayectoria que no depende de un solo género ni de un solo personaje.
+        </p>
+      </article>
+
+      <figure class="bio-figure reveal">
+        <div class="bio-frame">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Scarlett%20Johansson%20Cannes%202005.jpg" alt="Scarlett Johansson en el Festival de Cannes"
+               onerror="this.closest('.bio-frame').classList.add('no-photo'); this.remove();">
+          <div class="bio-fallback" aria-hidden="true">
+            <span class="bio-initials">SJ</span>
+          </div>
+        </div>
+        <figcaption>Una presencia escénica que combina intensidad, humor y precisión.</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ============ LÍNEA DE TIEMPO ============ -->
+  <section class="section section-alt" id="linea-tiempo">
+    <div class="container">
+      <p class="eyebrow reveal">Trayectoria</p>
+      <h2 class="reveal">Una carrera en movimiento</h2>
+
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <span class="timeline-year">1927</span>
+          <h3>Nace en Nueva York</h3>
+          <p>Scarlett Ingrid Johansson llega al mundo en Manhattan y crece rodeada de arte y cine.</p>
+        </li>
+        <li class="timeline-item reveal">
+          <span class="timeline-year">1948</span>
+          <h3>Primeros escenarios</h3>
+          <p>Con solo nueve años debuta en el teatro y comienza a construir una carrera frente a las cámaras.</p>
+        </li>
+        <li class="timeline-item reveal">
+          <span class="timeline-year">1955</span>
+          <h3>Debut en el cine</h3>
+          <p>Participa en <em>North</em> (1994), su primera aparición cinematográfica.</p>
+        </li>
+        <li class="timeline-item reveal">
+          <span class="timeline-year">1967</span>
+          <h3>Reconocimiento internacional</h3>
+          <p><em>Lost in Translation</em> (2003) le consigue una nominación al Globo de Oro y una audiencia global.</p>
+        </li>
+        <li class="timeline-item reveal">
+          <span class="timeline-year">1982</span>
+          <h3>Black Widow</h3>
+          <p>Se incorpora al universo Marvel como Natasha Romanoff, personaje que interpreta durante una década.</p>
+        </li>
+        <li class="timeline-item reveal">
+          <span class="timeline-year">1994</span>
+          <h3>Productora y protagonista</h3>
+          <p>Con <em>Black Widow</em> (2021) se convierte también en productora ejecutiva y lidera su propia historia.</p>
+        </li>
+        <li class="timeline-item reveal">
+          <span class="timeline-year">2014</span>
+          <h3>Nuevos horizontes</h3>
+          <p>Continúa alternando cine de autor, grandes producciones y proyectos detrás de cámaras.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PELÍCULAS ============ -->
+  <section class="section" id="obras">
+    <div class="container">
+      <p class="eyebrow reveal">Filmografía esencial</p>
+      <h2 class="reveal">Papeles que dejaron huella</h2>
+      <p class="section-intro reveal">Seis películas para recorrer su evolución. Cada tarjeta incluye un enlace de imagen y más información.</p>
+
+      <div class="grid cards-grid">
+
+        <article class="card reveal">
+          <span class="card-year">2003</span>
+          <h3>Lost in Translation</h3>
+          <p>Una actuación contenida y magnética que la convirtió en una estrella internacional.</p>
+          <a class="card-link" href="https://commons.wikimedia.org/wiki/Category:Scarlett_Johansson" target="_blank" rel="noopener">Ver imágenes →</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-year">2003</span>
+          <h3>La joven de la perla</h3>
+          <p>Drama de época donde su mirada sostiene una historia de silencios y tensión artística.</p>
+          <a class="card-link" href="https://en.wikipedia.org/wiki/Girl_with_a_Pearl_Earring_(film)" target="_blank" rel="noopener">Ver película →</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-year">2010</span>
+          <h3>Iron Man 2</h3>
+          <p>Su primera aparición como Natasha Romanoff, una espía elegante, hábil y enigmática.</p>
+          <a class="card-link" href="https://en.wikipedia.org/wiki/Iron_Man_2" target="_blank" rel="noopener">Ver película →</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-year">2013</span>
+          <h3>Her</h3>
+          <p>Presta su voz a Samantha, una inteligencia artificial cálida, divertida y profundamente humana.</p>
+          <a class="card-link" href="https://en.wikipedia.org/wiki/Her_(film)" target="_blank" rel="noopener">Ver película →</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-year">2019</span>
+          <h3>Historia de un matrimonio</h3>
+          <p>Una interpretación emocional y precisa que le valió una nominación al Óscar.</p>
+          <a class="card-link" href="https://en.wikipedia.org/wiki/Marriage_Story" target="_blank" rel="noopener">Ver película →</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-year">2021</span>
+          <h3>Black Widow</h3>
+          <p>La heroína toma el centro de la escena en una aventura sobre familia, identidad y libertad.</p>
+          <a class="card-link" href="https://en.wikipedia.org/wiki/Black_Widow_(2021_film)" target="_blank" rel="noopener">Ver película →</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CITA ============ -->
+  <section class="section quote-band">
+    <div class="container">
+      <blockquote class="big-quote reveal">
+        <p>«La actuación es una cuestión de encontrar la verdad dentro de lo que estás haciendo»</p>
+        <cite>— Scarlett Johansson, sobre su oficio</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ============ VIDEO ============ -->
+  <section class="section section-alt" id="video">
+    <div class="container grid grid-2">
+      <div class="video-text reveal">
+        <p class="eyebrow">Cine · entrevistas · proceso creativo</p>
+        <h2>Una voz detrás del personaje</h2>
+        <p>
+          Scarlett habla con frecuencia de la disciplina que exige construir un personaje: escuchar,
+          observar y encontrar una emoción real dentro de una escena imaginaria. Su trabajo combina
+          preparación técnica con una intuición muy física frente a la cámara.
+        </p>
+        <p>
+          Desde el cine independiente hasta la acción, esa búsqueda le permite cambiar de registro
+          sin perder una presencia reconocible. También ha defendido una mayor participación de las
+          mujeres en las historias que protagonizan.
+        </p>
+        <a class="card-link" href="https://www.youtube.com/watch?v=qipqD2jdXeI" target="_blank" rel="noopener noreferrer">
+          Abrir entrevista en YouTube →
+        </a>
+      </div>
+
+      <div class="video-wrap reveal">
+        <span class="video-badge">ENTREVISTA</span>
+        <iframe
+          src="https://www.youtube.com/embed/qipqD2jdXeI?rel=0"
+          title="Scarlett Johansson repasa sus películas"
+          loading="eager"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+        <p class="video-fallback">
+          ¿No se reproduce? <a href="https://www.youtube.com/watch?v=qipqD2jdXeI" target="_blank" rel="noopener noreferrer">Abrir el video en YouTube</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JUEGO: MEMORIA DE SCARLETT ============ -->
+  <section class="section" id="juego">
+    <div class="container">
+      <p class="eyebrow reveal">Juega y descubre</p>
+      <h2 class="reveal">Memoria de Scarlett</h2>
+      <p class="section-intro reveal">
+        Encuentra las parejas: cada <strong>película de Scarlett</strong> tiene su carta gemela con el
+        <strong>año y una pista</strong>. Voltea dos cartas por turno; si coinciden, se quedan
+        abiertas. ¡Completa el tablero en el menor número de movimientos!
+      </p>
+
+      <div class="game-hud reveal">
+        <div class="hud-item"><span id="gameMoves">0</span> movimientos</div>
+        <div class="hud-item"><span id="gamePairs">0</span>/6 parejas</div>
+        <div class="hud-item"><span id="gameTime">0:00</span></div>
+        <button class="btn btn-primary btn-small" id="gameRestart">Reiniciar</button>
+      </div>
+
+      <div class="game-board reveal" id="gameBoard" aria-label="Tablero del juego de memoria"></div>
+
+      <!-- Pantalla de victoria -->
+      <div class="game-win" id="gameWin" hidden>
+        <div class="game-win-card">
+          <div class="win-butterflies" aria-hidden="true">
+            <span>🦋</span><span>🦋</span><span>🦋</span><span>🦋</span><span>🦋</span>
+          </div>
+          <h3>¡La memoria del cine está completa!</h3>
+          <p id="gameWinText">Completaste el tablero.</p>
+          <button class="btn btn-primary" id="gamePlayAgain">Jugar de nuevo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LEGADO ============ -->
+  <section class="section section-alt" id="centro-gabo">
+    <div class="container">
+      <p class="eyebrow reveal">Presencia, estilo y archivo visual</p>
+      <h2 class="reveal">Una imagen que evoluciona</h2>
+      <p class="section-intro reveal">
+        La carrera de Scarlett también se cuenta en imágenes: retratos de alfombra roja, stills de
+        sus personajes y fotografías de rodaje. Consulta estas galerías para ampliar la referencia
+        visual y conocer los créditos de cada imagen.
+      </p>
+
+      <div class="grid grid-2 centro-grid">
+        <article class="centro-card reveal">
+          <h3>Galerías de imágenes</h3>
+          <p>
+            Estas fuentes abiertas reúnen fotografías de distintas etapas de su carrera y permiten
+            revisar la licencia y la autoría antes de reutilizar cualquier imagen.
+          </p>
+          <ul class="centro-links">
+            <li><a href="https://commons.wikimedia.org/wiki/Category:Scarlett_Johansson" target="_blank" rel="noopener">Galería en Wikimedia Commons</a></li>
+            <li><a href="https://www.flickr.com/search/?text=Scarlett%20Johansson" target="_blank" rel="noopener">Fotografías en Flickr</a></li>
+            <li><a href="https://www.gettyimages.com/photos/scarlett-johansson" target="_blank" rel="noopener">Archivo editorial en Getty Images</a></li>
+            <li><a href="https://www.imdb.com/name/nm0424060/" target="_blank" rel="noopener">Filmografía e imágenes en IMDb</a></li>
+          </ul>
+        </article>
+
+        <article class="centro-card reveal">
+          <h3>Una carrera sin un solo género</h3>
+          <p>
+            Desde el drama y la comedia hasta la acción y la producción, su filmografía muestra una
+            intérprete que usa cada proyecto para explorar una nueva textura.
+          </p>
+          <ul class="centro-links">
+            <li><strong>Drama:</strong> <em>Marriage Story</em> y <em>Girl with a Pearl Earring</em>.</li>
+            <li><strong>Acción:</strong> Natasha Romanoff en el universo Marvel.</li>
+            <li><strong>Comedia:</strong> <em>Jojo Rabbit</em> y <em>Don Jon</em>.</li>
+            <li><strong>Voz:</strong> Samantha en <em>Her</em>.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NOTICIAS ============ -->
+  <section class="section" id="noticias">
+    <div class="container">
+      <p class="eyebrow reveal">Actualidad</p>
+      <h2 class="reveal">Más allá de la pantalla</h2>
+
+      <div class="grid news-grid">
+        <article class="news-item reveal">
+          <time datetime="2024-11-14">14 Nov 2024</time>
+          <h3>Rediseño del sitio</h3>
+          <p>Una carrera que conecta el cine de autor con las grandes franquicias sin perder curiosidad creativa.</p>
+        </article>
+        <article class="news-item reveal">
+          <time datetime="2023-12-06">Legado</time>
+          <h3>Historias con voz propia</h3>
+          <p>Sus personajes más recordados combinan vulnerabilidad, humor y una fuerza que no necesita explicarse.</p>
+        </article>
+        <article class="news-item reveal">
+          <time datetime="2014-04-17">Archivo</time>
+          <h3>También produce</h3>
+          <p>Su participación como productora abre espacio para decidir cómo se cuentan las historias que protagoniza.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <p class="footer-brand">Scarlett<span class="nav-dot">.</span></p>
+      <p>Un homenaje a Scarlett Johansson (1984–).</p>
+    </div>
+    <nav aria-label="Enlaces del pie">
+      <ul class="footer-links">
+        <li><a href="#biografia">Perfil</a></li>
+        <li><a href="#obras">Películas</a></li>
+        <li><a href="#video">Entrevista</a></li>
+      </ul>
+    </nav>
+    <p class="footer-credit">AdSo resizing · Sitio de ejemplo con HTML semántico, CSS Grid y JS.</p>
+  </div>
+</footer>
+
+<a href="#inicio" class="to-top" id="toTop" aria-label="Volver arriba">↑</a>
+
+<!-- ============ CHATBOT "PREGÚNTALE A SCARLETT" ============ -->
+<button class="chat-fab" id="chatFab" aria-label="Abrir chat sobre Scarlett Johansson" aria-expanded="false">
+  <span class="chat-fab-icon">🦋</span>
+</button>
+
+<div class="chat-window" id="chatWindow" hidden>
+  <div class="chat-header">
+    <div>
+      <p class="chat-title">Pregúntale a Scarlett</p>
+      <p class="chat-sub">Bot sobre su vida, películas y trayectoria</p>
+    </div>
+    <button class="chat-close" id="chatClose" aria-label="Cerrar chat">×</button>
+  </div>
+
+  <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+
+  <div class="chat-chips" id="chatChips"></div>
+
+  <form class="chat-input-row" id="chatForm" autocomplete="off">
+    <input type="text" id="chatInput" placeholder="Escribe tu pregunta…" aria-label="Escribe tu pregunta">
+    <button type="submit" class="chat-send" aria-label="Enviar">➤</button>
+  </form>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/chatbot.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
